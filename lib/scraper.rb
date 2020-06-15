@@ -21,7 +21,7 @@ class Scraper
       student.blog
       student.profile_quote
       student.bio
-      student./profile_url 
+      student.profile_url 
     end
   end
 
