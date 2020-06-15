@@ -15,7 +15,7 @@ class Scraper
       name = html.search(".student-name").text
       location = html.search(".student-location").text
       hash = {name: name, location: location}
-      
+      binding.pry
       student = Student.new()
 
     end
