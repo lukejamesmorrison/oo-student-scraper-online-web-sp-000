@@ -10,7 +10,7 @@ class Scraper
   def self.scrape_index_page(index_url)
     doc = self.scrape_page(index_url)
 
-    puts doc.css(".student-card")
+    puts doc.search(".student-card")
   end
 
   def self.scrape_profile_page(profile_url)
