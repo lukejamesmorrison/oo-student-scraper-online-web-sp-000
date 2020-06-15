@@ -14,7 +14,7 @@ class Scraper
     students_html.each do |html|
       name = html.search(".student-name").text
       location = html.search(".student-location").text
-      students << Student.new({nam => name, location => location})
+      students << Student.new({name => name, location => location})
     end
     students
     binding.pry
