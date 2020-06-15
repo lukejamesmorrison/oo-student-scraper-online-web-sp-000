@@ -12,9 +12,11 @@ class Scraper
     doc = self.scrape_page(index_url)
     students_html = doc.search(".student-card")
     students_html.each do |html|
-      student = Student.new({})
-      student.name = html.search(".student-name").text
-      student.location = html.search(".student-location").text
+      name = html.search(".student-name").text
+      location = html.search(".student-location").text
+      student = Student.new(name: , location)
+
+
     end
   end
 
