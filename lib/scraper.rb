@@ -11,7 +11,7 @@ class Scraper
     doc = self.scrape_page(index_url)
     students_html = doc.search(".student-card")
     students_html.each do |html|
-      student  = Student.new
+      student  = Student.new([])
     end
   end
 
