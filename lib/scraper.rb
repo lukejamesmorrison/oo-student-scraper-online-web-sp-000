@@ -13,9 +13,11 @@ class Scraper
     students_html = doc.search(".student-card")
     students_html.each do |html|
       name = html.search(".student-name").text
-      binding.pry
       location = html.search(".student-location").text
-      student = Student.new({name: name, location: location})
+      hash = {name: name, location: location}
+      
+      student = Student.new()
+
     end
   end
 
