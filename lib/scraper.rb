@@ -17,7 +17,7 @@ class Scraper
       students << Student.new({name => name, location => location})
     end
     students
-    binding.pry
+    # binding.pry
   end
 
   def self.scrape_profile_page(profile_url)
