@@ -16,7 +16,7 @@ class Scraper
       location = html.search(".student-location").text
       students << Student.new({name: name, location: location})
     end
-    students
+    puts students
   end
 
   def self.scrape_profile_page(profile_url)
