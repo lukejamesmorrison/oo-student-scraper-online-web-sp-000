@@ -14,7 +14,7 @@ class Scraper
     students_html.each do |html|
       name = html.search(".student-name").text
       location = html.search(".student-location").text
-      student = Student.new({name, location})
+      student = Student.new({name: name, location: location})
     end
   end
 
