@@ -15,7 +15,6 @@ class Scraper
       name = html.search(".student-name").text
       location = html.search(".student-location").text
       students << Student.new({name: name, location: location})
-
     end
   end
 
