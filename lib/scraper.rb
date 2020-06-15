@@ -14,13 +14,13 @@ class Scraper
     students_html.each do |html|
       student = Student.new({})
       student.name =
-      student.location = 
+      student.location =
       student.twitter =
       student.linkedin =
       student.github =
       student.blog =
       student.profile_quote =
-      student.bio = 
+      student.bio =
       student.profile_url =
     end
   end
