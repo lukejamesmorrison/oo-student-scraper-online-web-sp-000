@@ -3,6 +3,9 @@ require 'pry'
 
 class Scraper
 
+  def self.scrape_page(url)
+  end
+
   def self.scrape_index_page(index_url)
     doc = Nokogiri::HTML(open(index_url))
   end
